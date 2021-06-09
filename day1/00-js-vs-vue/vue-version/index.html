@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  <body id="app">
+    <input v-model="todoText" type="text" />
+    <button @click="addTodo">Ekle</button>
+    <ul>
+      <li v-for="todoItem in todoList" :key="todoItem">{{ todoItem }}</li>
+    </ul>
+    <script src="app.js"></script>
+  </body>
+</html>

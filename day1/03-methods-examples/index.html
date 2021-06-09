@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Methods Example</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="p-5">
+    <div id="app">
+      <h1>{{ title }}</h1>
+      <!-- <input type="text" @input="newItemText = $event.target.value" /> -->
+      <!-- <input type="text" @keydown="myEvent" /> -->
+      <input type="text" @keydown.enter="items.push($event.target.value)" />
+      <!-- <button @click="items.push(newItemText)">Ekle</button> -->
+      <p>{{ items }}</p>
+      <p>{{ formatter() }}</p>
+      <p>{{ getSlicedItems(0,2) }}</p>
+      <p>{{ getSlicedItems(2,4) }}</p>
+      <p>{{ getSlicedItems(4,6) }}</p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

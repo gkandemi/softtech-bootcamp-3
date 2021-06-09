@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Loops</title>
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li v-for="(item, i) in itemList">{{ i + 1 }} - {{ item }}</li>
+      </ul>
+      <ul>
+        <li v-for="(info, key) in personal">{{ key }} : {{ info }}</li>
+      </ul>
+      <ul>
+        <li v-for="i in 10">
+          <img src="" alt="" />
+          <h3>Contact</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor nam,
+            iusto, aspernatur sunt nulla maiores perferendis provident error
+            nisi neque deserunt obcaecati unde aperiam incidunt, et nihil
+            tempora facere ullam.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Class binding</title>
+    <style>
+      .box {
+        background-color: #dfdfdf;
+        width: 200px;
+        height: 200px;
+        margin-top: 10px;
+      }
+
+      .red {
+        background-color: red;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .green {
+        background-color: green;
+      }
+      .border {
+        border: 3px dashed #000;
+        border-radius: 5px;
+      }
+
+      input {
+        outline: none;
+      }
+      button {
+        margin-right: 10px;
+      }
+
+      .balanceError {
+        border: 1px solid red;
+        color: red;
+      }
+      .balanceSuccess {
+        border: 1px solid green;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <!-- <div class="box" :class="boxClasses"></div> -->
+      <!-- <h3>{{ customerBalance }}</h3>
+      <input type="text" v-model="amount" :class="customerInputClasses" />
+      <br /><br />
+      <div
+        class="box"
+        :class="{ red : amount == 1, blue : amount > 3, border: amount > 7}"
+      ></div>
+ -->
+      <button @click="boxClass = 'red'">Red</button>
+      <button @click="boxClass = 'green'">Green</button>
+      <button @click="boxClass = 'blue'">Blue</button>
+      <div class="box" :class="boxClass" :style="{ color : 'blue'}">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
+        ullam! Cum odit eius molestiae sint sequi voluptatem! Vero maxime, harum
+        nisi ratione veritatis necessitatibus ad unde perferendis sapiente
+        reiciendis maiores?
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

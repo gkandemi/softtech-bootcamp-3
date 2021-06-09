@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Conditions</title>
+  </head>
+  <body>
+    <div id="app">
+      <input v-if="show" type="text" v-model="myNumber" />
+      <h3 v-if="myNumber > 0">Sayı Pozitif</h3>
+      <h3 v-else-if="myNumber < 0">Sayı Negatif</h3>
+      <h3 v-else>Sayı 0'dır</h3>
+      <hr />
+      <h1 v-if="show">Show true oldugunda gözükür..</h1>
+      <h4 v-else="!show">Show false oldugunda gözükür..</h4>
+      <hr />
+      <h1 v-show="show">Show true oldugunda gözükür..</h1>
+      <h4 v-show="!show">Show false oldugunda gözükür..</h4>
+      <button @click="show = !show">Toggle</button>
+
+      <!-- <div v-if="...">
+        <div v-if="..."></div>
+        <div v-else-if="...">
+          <p v-if></p>
+          <p v-else></p>
+
+          <p v-if></p>
+          <p v-else></p>
+        </div>
+      </div> -->
+
+      <!-- true => false
+      false => true
+      0 > 1
+      1 > 0 -->
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
