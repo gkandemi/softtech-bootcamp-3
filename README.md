@@ -4,8 +4,10 @@
 
 [Javascript ile En çok Kullanılan Array Fonksiyonları #1 - find, findIndex, indexOf, filter, map
 ](https://www.youtube.com/watch?v=slM1cdV-WXM)
+
 [Javascript ile En çok Kullanılan Array Fonksiyonları #2 - Neden Kullanıyoruz? Neden forEach Değil?
 ](https://www.youtube.com/watch?v=LFlBCT6Ohmo)
+
 [Javascript ile En çok Kullanılan Array Fonksiyonları #3 - map, filter örneği ve reduce, some, every
 ](https://www.youtube.com/watch?v=nIy9hD2Udoo)
 
