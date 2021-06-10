@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>CounterApp</title>
+    <style>
+      header {
+        height: 50px;
+        background-color: #265423;
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #183516;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <app-header></app-header>
+      <div class="row mt-5">
+        <div class="col-4 card border">
+          <counter-item />
+        </div>
+        <div class="col-4 card border">
+          <counter-item></counter-item>
+        </div>
+        <div class="col-4 card border">
+          <counter-item></counter-item>
+        </div>
+        <div class="col-4 card border">
+          <counter-item></counter-item>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
