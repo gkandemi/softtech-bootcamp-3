@@ -43,8 +43,30 @@
 
 ### 2.Gün
 
-Burada 2.gün içerikleri yer alacaktır.
+- Component Kavramı
+- Vue CLI
+- Klasör Yapısı
+- .vue uzantılı dosyalar
+- İç içe component dizaynı
+- Componentler arası iletişim
+  - Parent > Child arası iletişim (props)
+  - Child > Parent arası iletişim (custom event)
+  - Provide > Inject Yöntemi
+- Dinamik Componentler
+- Axios ile HTTP Requestleri atmak
 
 ### 3.Gün
 
-Burada 3.gün içerikleri yer alacaktır.
+- Vue Router ile Uygulama içinde Navigasyon Yapmak
+  - Route Tanımlamak
+  - History / Hash Mode
+  - Route Link
+  - JavaScript üzerinden navigasyon işlemi
+  - Navigation Guards
+- State Management (Vuex)
+  - Nedir? ve Neden ihtiyacımız var?
+  - Store yapısı
+  - State, Mutations, Actions, Getters
+  - mapState, mapGetters, mapActions, mapMutations
+  - Modules Kavramı
+- Gün Sonu Uygulaması
