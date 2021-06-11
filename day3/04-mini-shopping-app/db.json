@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "name": "Ahşap Masa",
+      "price": "1000",
+      "category": "mobilya",
+      "description": "cok güzel bir masa vallahi..",
+      "id": 1
+    },
+    {
+      "name": "RODE NT USB Mikrofon",
+      "price": "3000",
+      "category": "elektronik",
+      "description": "Çok güzel bir mikrofon..",
+      "id": 2
+    },
+    {
+      "name": "MacBookPro 2019 TouchBar 15\"",
+      "price": "20000",
+      "category": "elektronik",
+      "description": "İyi bir bilgisayar..",
+      "id": 3
+    },
+    {
+      "name": "Yeni bir ürün",
+      "price": "1000",
+      "category": "elektronik",
+      "description": "yok bir aciklamam.",
+      "id": 4
+    }
+  ]
+}

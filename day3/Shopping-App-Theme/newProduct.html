@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sepetim</a>
+            </li>
+          </ul>
+          <div class="nav-item">
+            <a class="nav-link" href="#">+ Yeni Ürün Ekle</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-6 offset-3 p-0 card">
+          <div class="card-header">Yeni Ürün Ekle</div>
+          <div class="card-body">
+            <div class="mb-3">
+              <label for="productName" class="form-label">Ürünün Adı</label>
+              <input type="text" class="form-control" id="productName" placeholder="ürünün adını giriniz..." />
+            </div>
+            <div class="mb-3">
+              <label for="price" class="form-label">Ürünün Fiyatı</label>
+              <input type="text" class="form-control" id="price" placeholder="ürünün fiyatını giriniz..." />
+            </div>
+            <div class="mb-3">
+              <label for="productCategory" class="form-label">Kategori</label>
+              <select class="form-select" id="productCategory">
+                <option value="mobilya">Mobilya</option>
+                <option value="elektronik">Elektronik</option>
+                <option value="teknoloji">Teknoloji</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="descriptionArea" class="form-label">Açıklama</label>
+              <textarea class="form-control" id="descriptionArea" rows="3"></textarea>
+            </div>
+            <div class="d-flex justify-content-end align-items-center">
+              <button class="btn btn-sm btn-secondary me-1">İptal</button>
+              <button class="btn btn-sm btn-primary">Kaydet</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
